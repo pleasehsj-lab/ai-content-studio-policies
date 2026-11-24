@@ -1,47 +1,66 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><link rel="stylesheet" href="style.css"><title>Privacy Policy - AI Content Studio</title></head><body><main><nav><a href="index.html">Home</a><a href="privacy.html">Privacy Policy</a><a href="terms.html">Terms of Service</a><a href="data-deletion.html">Data deletion</a><a href="platforms.html">Platform notes</a></nav><h1>Privacy Policy</h1><p class="muted">Last updated: 2026-11-24</p>
-<p>AI Content Studio ("the tool") is a private tool used only by its owner for the owner's own channels and accounts (see
-<a href="index.html">Home</a>). The only user whose data it accesses is the owner.</p>
-<h2>1. Platforms it connects to</h2>
-<p>YouTube (Google). Other platforms are added only through their official APIs and are listed with their status on
-<a href="platforms.html">Platform notes</a>.</p>
-<h2>2. Data and permissions requested</h2>
-<p><strong>Google / YouTube:</strong> OAuth scope <code>https://www.googleapis.com/auth/youtube.force-ssl</code>. With it the tool reads
-the owner's channel identity (channel ID, title), the list and status of the owner's uploaded videos, and the channel's own settings; and it
-uploads the owner's videos and updates their metadata, captions, thumbnails and publish status.</p>
-<p>The tool does not request access to contacts, email, location, payment information, or any other person's account.</p>
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><link rel="stylesheet" href="style.css"><title>Privacy Policy - AI Content Studio</title></head><body><main><nav><a href="index.html">Home</a><a href="privacy.html">Privacy Policy</a><a href="terms.html">Terms of Service</a><a href="data-deletion.html">Data deletion</a><a href="platforms.html">Platform notes</a><a href="contact.html">Contact</a></nav><h1>Privacy Policy</h1><p class="muted">Last updated: 2026-11-24</p>
+<p>AI Content Studio ("the tool", also registered on Pinterest as "Inside the Bite Content Studio") is a private tool used only by its owner for
+the owner's own brand accounts (see <a href="index.html">Home</a>). The only user whose data it accesses is the owner. It does not collect
+information from viewers, followers or any other person, and it does not use cookies or collect log-in passwords.</p>
+<h2>1. Platforms and permissions</h2>
+<p>The tool connects only through each platform's official API and only to the owner's own accounts. The exact permissions per platform and
+whether the platform is connected today are listed on <a href="platforms.html">Platform notes</a>. In short:</p>
+<ul>
+<li><strong>Google / YouTube</strong>: OAuth scope <code>youtube.force-ssl</code>.</li>
+<li><strong>Meta (Facebook Pages, Instagram, Threads)</strong>: <code>pages_show_list</code>, <code>pages_read_engagement</code>,
+<code>pages_manage_posts</code>, <code>instagram_basic</code>, <code>instagram_content_publish</code>, <code>threads_basic</code>,
+<code>threads_content_publish</code>. No messaging, comments, ads or insights permissions are requested.</li>
+<li><strong>Pinterest</strong>: <code>user_accounts:read</code>, <code>boards:read</code>, <code>pins:read</code>, <code>pins:write</code>.</li>
+<li><strong>Dailymotion</strong>: the owner's private API key with scope <code>video.manage</code>.</li>
+</ul>
+<h2>2. What data the tool processes</h2>
+<ul>
+<li>Identity of the owner's own account: account or page ID, name or username. Used only to confirm that the authorized account is exactly the
+intended brand account before any write; a different account stops the tool.</li>
+<li>The owner's own posts: IDs, titles, publish or schedule time, processing and publish status, public link. Used to confirm results and to
+avoid duplicate posts.</li>
+<li>Platform limits: the account's remaining publishing quota where the platform reports it.</li>
+<li>Pinterest: the names and IDs of the owner's own boards (to choose where a Pin goes) and the IDs and status of Pins the tool created.</li>
+</ul>
+<p>The tool does not request or process contacts, private messages, comments, followers' data, location, payment information, or any other
+person's account.</p>
 <h2>3. How the data is used</h2>
-<ul><li>To confirm that the authorized channel is exactly the intended channel before any write (a different channel stops the tool).</li>
-<li>To upload, schedule and verify the owner's own videos.</li>
-<li>To avoid duplicate uploads and to stay within the platform's API quota.</li></ul>
-<p>The data is not used for advertising, profiling, or any purpose other than operating the owner's own channels.</p>
+<p>Only to operate the owner's own accounts: upload, schedule, publish and verify the owner's own content, prevent duplicates, and stay within
+the platform's limits. It is not used for advertising, profiling, selling, or any other purpose.</p>
 <h2>4. Storage and protection</h2>
-<ul><li>OAuth tokens are stored only on the owner's own computer, in the Windows Credential Manager, one entry per channel. They are never
-written to source code, repositories, logs or shared documents.</li>
-<li>The tool keeps local operating records on the owner's computer: the verified channel ID and title, upload and schedule results (video
-IDs, times, status), API call counts for quota, and backup copies of the channel's own settings taken before changes.</li>
-<li>The tool has no server of its own; nothing is sent to one.</li></ul>
-<h2>5. Third-party AI services</h2>
-<p>Data received from Google APIs (channel identity, video lists, video status) is <strong>not</strong> sent to third-party AI services and is
-<strong>not</strong> used to develop, improve or train any AI or machine-learning model.</p>
-<p>Separately, the owner may use AI services to help write or translate the owner's own titles, descriptions and subtitles before upload.
-That text is the owner's own content, not data obtained from Google user data.</p>
-<h2>6. Sharing</h2>
-<p>Data obtained through Google APIs is not sold, rented or transferred to anyone. It is only sent back to the same platform as part of the
-owner's own uploads and edits.</p>
+<ul>
+<li>Access tokens and API keys are stored only on the owner's own computer in the Windows Credential Manager. They are never written to source
+code, repositories, logs or shared documents, and they are never shown on screen.</li>
+<li>The tool keeps local operating records on the owner's computer: verified account IDs, the owner's own post IDs, times and status, and
+API call counts. Pinterest data is fetched from the API when needed; the tool stores only the IDs and status of the Pins it created.</li>
+<li>The tool has no server of its own and no database outside the owner's computer.</li>
+<li>Some APIs (for example Instagram and Threads) accept media only from a public web address. If that is needed, a temporary copy of the
+owner's own video or image may be placed in temporary storage and deleted after it is published. This option is switched off at present.</li>
+</ul>
+<h2>5. Sharing</h2>
+<p>Data obtained from a platform is not sold, rented or transferred to anyone. It is only sent back to the same platform as part of the owner's
+own posts.</p>
+<h2>6. AI services</h2>
+<p>The tool has no code path that sends data received from platform APIs (account identity, post lists, publish status, Pinterest board and Pin
+data) to an AI service, and that data is not used to develop, improve or train any AI or machine-learning model. The tool does not read
+comments, messages, followers or analytics at all.</p>
+<p>The owner does use AI services for the owner's own material: to help write or translate titles, descriptions and subtitles, and to review the
+owner's own rendered videos before upload. The owner may also use AI coding assistants to maintain the tool on the owner's computer; such an
+assistant can see local files of the project, which may include the status of the owner's own posts (never tokens or keys, which are only in the
+Windows Credential Manager). This concerns only the owner's own accounts, never another person's data.</p>
 <h2>7. Retention</h2>
-<p>Tokens are kept until the owner revokes access or removes the channel from the tool. Local operating records are kept while the owner
-operates the channel and are deleted by the owner when no longer needed (see <a href="data-deletion.html">Data deletion</a>).</p>
+<p>Tokens and keys are kept until the owner revokes access or removes the account from the tool. Local operating records are kept while the
+owner operates the account and are deleted by the owner when no longer needed. Pinterest data is not kept longer than needed to operate the
+owner's Pins.</p>
 <h2>8. Revoking access and deleting data</h2>
-<p>Google access can be revoked at any time at <a href="https://myaccount.google.com/permissions">Google Account: Third-party
-connections</a>. Deletion steps: <a href="data-deletion.html">Data deletion</a>.</p>
-<h2>9. Google API Services User Data Policy</h2>
-<p>AI Content Studio's use and transfer of information received from Google APIs adheres to the
-<a href="https://developers.google.com/terms/api-services-user-data-policy">Google API Services User Data Policy</a>, including the Limited Use
-requirements. The tool uses YouTube API Services: see the <a href="https://www.youtube.com/t/terms">YouTube Terms of Service</a> and the
-<a href="https://policies.google.com/privacy">Google Privacy Policy</a>.</p>
-<h2>10. Other platforms</h2>
-<p>Before another platform is connected, its permissions and data handling are added to <a href="platforms.html">Platform notes</a>, and the
-rules on this page apply to it as well.</p>
+<p>Access can be revoked at any time in each platform's connected-apps settings, and all locally stored data can be deleted. Steps and how to
+request deletion: <a href="data-deletion.html">Data deletion</a>.</p>
+<h2>9. Platform rules</h2>
+<p>Use of each platform follows that platform's own terms and developer policies, including the Google API Services User Data Policy (with its
+Limited Use requirements) for data received from Google APIs, the YouTube API Services Terms, Meta Platform Terms, Pinterest Developer
+Guidelines and the Dailymotion terms of use.</p>
+<h2>10. Children</h2>
+<p>The tool is not directed to children and is not used by anyone other than its adult owner.</p>
 <h2>11. Changes and contact</h2>
-<p>Changes are published on this page with a new date. Contact: the link at the bottom of this page.</p>
-<footer class="muted">AI Content Studio · Contact: <a href="https://github.com/pleasehsj-lab/ai-content-studio-policies/issues">open an issue in this repository</a></footer></main></body></html>
+<p>Changes are published on this page with a new date. Contact: E-mail: <a href="mailto:insidethebite.tv@gmail.com">insidethebite.tv@gmail.com</a> (preferred), or <a href="https://github.com/pleasehsj-lab/ai-content-studio-policies/issues">open an issue in this repository</a>.</p>
+<footer class="muted">AI Content Studio · <a href="contact.html">Contact</a></footer></main></body></html>
