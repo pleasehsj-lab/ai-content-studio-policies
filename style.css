@@ -12,3 +12,4 @@ table{border-collapse:collapse;width:100%;font-size:15px}
 th,td{border:1px solid var(--line);padding:6px 8px;text-align:left;vertical-align:top}
 .wrap{overflow-x:auto}
 footer{margin-top:40px;padding-top:12px;border-top:1px solid var(--line)}
+code{overflow-wrap:anywhere;word-break:break-word}
